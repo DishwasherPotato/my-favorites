@@ -1,8 +1,99 @@
-body{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-div{
+body {
+    background: linear-gradient(135deg, #0f0f14, #1b1b24);
+    color: #e6e6eb;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    color: #f04e4e;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.subtitle h2 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.intro,
+.statistics {
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.intro p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #dcdce3;
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.youtube iframe {
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+}
+
+/* Menu / buttons */
+.menu,
+a {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="button"] {
+    background: linear-gradient(135deg, #f04e4e, #b12c2c);
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+input[type="button"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(240, 78, 78, 0.5);
+    opacity: 0.9;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    .title h1 {
+        font-size: 1.9rem;
+    }
+
+    .intro,
+    .statistics {
+        padding: 15px;
+    }
 }
